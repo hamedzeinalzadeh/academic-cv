@@ -1,0 +1,462 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'\moderncvicons{awesome} % Enable social media icons
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{fontawesome}
+% \usepackage{hyperref} % For clickable links
+
+% Small images inline with text
+\newcommand*{\authorimg}[1]{%
+	\raisebox{-.3\baselineskip}{%
+		\includegraphics[
+		height=\baselineskip,
+		width=\baselineskip,
+		keepaspectratio,
+		]{#1}%
+	}%
+}
+
+% Custom commands for LinkedIn and GitHub links with icons
+\newcommand{\linkedin}[1]{\faLinkedinSquare~\href{https://linkedin.com/in/#1}{#1}}
+\newcommand{\github}[1]{\faGithub~\href{https://github.com/#1}{#1}}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\firstname{Hamed} % Your first name
+\familyname{Zeinalzadeh} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{ML Engineer}
+%\address{123 Broadway}{City, State 12345}
+\mobile{(+98) 902 4659487}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{hamedzeinalzadeh@gmail.com}
+\homepage{hamedzeinalzadeh.github.io}{hamedzeinalzadeh.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+
+% Use custom commands for LinkedIn and GitHub
+\extrainfo{\faLinkedinSquare~\href{https://linkedin.com/in/hamed-zeinalzadeh}{hamed-zeinalzadeh} 
+    \enspace{\large $\bullet$}\enspace 
+    \faGithub~\href{https://github.com/hamedzeinalzadeh}{hamedzeinalzadeh}}
+
+
+
+
+
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+%
+% \clearpage
+
+% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+% \date{\today} % Letter date
+% \opening{Dear Sir or Madam,} % Opening greeting
+% \closing{Sincerely yours,} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+% \makelettertitle % Print letter title
+
+% \lipsum[1-2] % Dummy text
+% \lipsum[4] % Dummy text
+
+% \makeletterclosing % Print letter signature
+
+% \newpage
+%
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	MAJOR INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{MAJOR INTERESTS}
+\begin{itemize}
+    \item Artificial Intelligence
+    \item Data Analytics
+    \item Machine Learning and Deep Learning
+    \item Image Processing
+    \item Bioinformatics
+
+\end{itemize} 
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+\begin{itemize}
+    \item \textbf{Master of Science} \hfill \\ 
+    \href{https://aut.ac.ir/}{\authorimg{Images/aut.png} \emph{AmirKabir University of Technology}} \hfill \emph{Tehran-Iran}
+    \begin{itemize}
+        \item Digital Electronic Systems \hfill September 2018 - June 2021
+        \item GPA: 16.83/20
+        \item Thesis: Optimal Phasor Measurement Units (PMUs) Placement by Considering System Parameters and Designing Redundant Network Communication Infrastructure in Power Smart Grid
+    \end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+    \item \textbf{Bachelor of Science} \hfill \\ 
+    \href{https://aut.ac.ir/}{\authorimg{Images/aut.png} \emph{AmirKabir University of Technology}} \hfill \emph{Tehran-Iran}
+    \begin{itemize}
+        \item Electrical and Computer Engineering \hfill September 2014 - September 2018
+        \item GPA: 17.23/20	
+        \item Thesis: Design and Development of a Smart Microprocessor Controlled Alarm Places System Equipped by SIM CARD
+    \end{itemize}
+\end{itemize}
+
+
+% \cventry{2011--2012}{Masters of Commerce}{The University of California}{Berkeley}{\textit{GPA -- 8.0}}{First Class Honours}  % Arguments not required can be left empty
+% \cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
+
+% \section{Masters Thesis}
+
+% \cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+% \cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+% \cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	HIGHLIGHTS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{HIGHLIGHTS}
+% \begin{itemize}
+%     \item Machine Learning Engineer with 5+ years of professional experience in design, development, and deployment of machine learning pipelines.
+%     \item Highly experienced in Natural Language Processing with 5+ years of research and industerial experience.
+%     \item Lead technical engagement with clients in presenting machine learning models and exploratory data analysis results.
+%     \item Team-player with strong communication and leadership skills.
+%     \item Founder of \href{https://www.apply-blog.com/applyfund/}{ApplyFund} startup in 2019 that facilitates connecting brilliant students and donors, collecting over 20k CAD in the first year to help students financially.
+%     \item Mentor to Machine Learning Developers to help with their career goals with 3+ years of teaching experience in Python, Machine Learning, Deep Learning, Statistics, Linux, Git, etc. and 100+ students.
+% \end{itemize}
+
+
+    
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{WORK EXPERIENCE}
+\begin{itemize}
+    \item \href{}{%
+        \authorimg{Images/sdra_logo.jpg} \emph{SDRA Corporation}} \hfill August 2023 - Present \\
+        \textbf{Computer Vision Engineer} \\
+        Specializing in designing and implementing high-accuracy systems, responsibilities include camera calibration and advanced algorithm development for detection, segmentation, and tracking. Proficient in integrating hardware and software components to optimize system performance.
+
+    \item \href{https://simorgh.cloud/}{%
+        \authorimg{Images/simorgh_logo.jpeg} \emph{High Performance Computing Research Center}} \hfill July 2021 - July 2022 \\
+        \textbf{Big Data Specialist} \\
+        Creating and maintaining clusters in the Apache Big Data ecosystem, handling large-scale data, managing parallel data processing, and automating the configuration of multinode Spark services for machine learning and data analytics.
+
+    \item \href{https://irancell.ir/en/home}{%
+        \authorimg{Images/irancell_logo.png} \emph{MTN Irancell}} \hfill January 2021 - March 2021 \\
+        \textbf{Network Analyst Intern} \\
+        Monitoring and analyzing network performance data to optimize network resources and predicting traffic loads using ML algorithms.
+
+    \item \href{https://www.tic.ir/en/home}{%
+        \authorimg{Images/zirsakht_logo.png} \emph{Infrastructure Communication Company}} \hfill June 2018 - September 2018 \\
+        \textbf{AI Researcher Intern} \\
+        Worked on a project involving the analysis of data from wireless modems located in a specific area of the Radio and Television Building. The project aimed to optimize energy consumption by making informed decisions about modem allocation based on user location.
+\end{itemize}
+
+% \section{Experience}
+
+% \subsection{Vocational}
+
+% \cventry{2012--Present}{1\textsuperscript{st} Year Analyst}{\textsc{Lehman Brothers}}{Los Angeles}{}{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.
+% \newline{}\newline{}
+% Detailed achievements:
+% \begin{itemize}
+% \item Learned how to make amazing coffee
+% \item Finally determined the reason for \textsc{PC LOAD LETTER}:
+% \begin{itemize}
+% \item Paper jam
+% \item Software issues:
+% \begin{itemize}
+% \item Word not sending the correct data to printer
+% \item Windows trying to print in letter format
+% \end{itemize}
+% \item Coffee spilled inside printer
+% \end{itemize}
+% \item Broke the office record for number of kitten pictures in cubicle
+% \end{itemize}}
+
+% %------------------------------------------------
+
+% \cventry{2011--2012}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+% %------------------------------------------------
+
+% \subsection{Miscellaneous}
+
+% \cventry{2010--2011}{}{}{}{}{Spent some time finding myself. This was a courageous endeavour that didn't have a job title. It was quite important to my overall development though so I'm adding it to my CV. Also it explains the gap in my otherwise stellar CV.}
+
+% \cventry{2009--2010}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems. Allowed me to become expert in all forms of martial arts and weaponry.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Awards}
+
+% \cvitem{2011}{School of Business Postgraduate Scholarship}
+% \cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{PUBLICATION}
+\begin{itemize}
+    \item \textbf{In Preparation:} Optimal PMU Placement using ZIB Descriptive Binary Equations and a Novel Tree-Based Optimization Method \\
+    \emph{Affiliation: Department of Electrical Engineering, AmirKabir University of Technology} \\
+    Expected submission date: May 2025.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{PROJECTS}
+\vspace{0.3em}
+\begin{itemize}
+    \item \textbf{Simulation of "Node Dependent Local Smoothing for Scalable Graph Learning"} \\ 
+    Implemented using PyTorch as the final project report for the \emph{Statistical Learning} course, under the supervision of Dr. Vahid Pourahmadi.
+
+    \item \textbf{Automating Multi-Node Apache Spark Services} \\ 
+    Automated the configuration and deployment of Apache Spark on Linux-based systems by running the main script on the Master node. Project completed for the High Performance Computing Research Center.
+
+    \item \textbf{Recommender Systems Design on the IMDB Dataset} \\ 
+    Designed recommender systems using collaborative-based and content-based filtering techniques. Tools: Scikit-Learn.
+
+    \item \textbf{Pneumonia Detection from X-Ray Images} \\ 
+    Identified pneumonia signs by classifying X-ray images using PyTorch. Dataset: RSNA Pneumonia Detection Challenge. Methods: ResNet18 classifier and Class Activation Maps.
+
+    \item \textbf{Cardiac Detection in X-Ray Images} \\ 
+    Predicted bounding boxes around the heart in X-ray images using PyTorch. Dataset: RSNA Pneumonia Detection Challenge. Model: ResNet18.
+
+    \item \textbf{Left Atrium Segmentation in Cardiac MRI Images} \\ 
+    Automatically segmented the left atrium in cardiac MRI images using PyTorch. Dataset: Medical Segmentation Decathlon. Model: UNet.
+
+    \item \textbf{Lung Tumor Segmentation in CT Scans} \\ 
+    Segmented lung tumors in CT images using PyTorch. Dataset: Medical Segmentation Decathlon. Model: UNet.
+
+    \item \textbf{Targeted Advertisement Marketing Campaign} \\ 
+    Designed a data-driven marketing campaign by clustering customers into distinctive groups. Tools: K-Means clustering, Autoencoder, PCA, and Keras. Dataset: Extensive 6-month customer data.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\section{SKILLS}
+
+\begin{multicols}{2}
+    % Programming/Scripting Section (No color)
+    \textbf{\large Programming/Scripting} 
+    \begin{itemize}
+        \item \textbf{Python}
+        \begin{itemize}
+            \item PyTorch
+            \item Scikit-Learn
+            \item NLTK
+            \item Pandas
+            \item NumPy
+            \item OpenCV
+            \item PySpark
+            \item FastAPI
+        \end{itemize}
+        \item \textbf{Databases}
+        \begin{itemize}
+            \item MySQL
+            \item Neo4j
+        \end{itemize}
+        \item \textbf{Other Languages}
+        \begin{itemize}
+            \item BASH
+            \item C/C++
+            \item HTML5/CSS3/JavaScript
+        \end{itemize}
+    \end{itemize}
+    
+    % Software/Version Control/Virtualization Section (No color, larger font)
+    \textbf{\large Software/Version Control/Virtualization} 
+    \begin{itemize}
+        \item Git
+        \item Docker
+        \item Wireshark
+        \item OPNET
+        \item Arduino-ARM Keil
+    \end{itemize}
+\end{multicols}
+
+% \section{Computer skills}
+
+% \cvitem{Basic}{\textsc{java}, Adobe Illustrator}
+% \cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, Microsoft Windows}
+% \cvitem{Advanced}{Computer Hardware and Support}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Communication Skills}
+
+% \cvitem{2010}{Oral Presentation at the California Business Conference}
+% \cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{ACTIVITIES}
+
+\begin{itemize}
+    \item \textbf{Technical Supervisor}, TTH200 HART Project (Temperature Transmitter Reverse Engineering) \\
+    \textit{Innovation Center, Electrical Engineering Department, Amirkabir University of Technology, Tehran, Iran}
+    \begin{itemize}
+        \item Led the reverse engineering project of the TTH200 HART temperature transmitter, manufactured by ABB (Germany).
+    \end{itemize}
+    
+    \item \textbf{Member of Technical Committee}, AUTCup 2020 Mission Impossible League \\
+    \textit{Tehran, Iran}
+    \begin{itemize}
+        \item Contributed to the technical planning and organization of the event.
+    \end{itemize}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	COURSES SECTION
+%----------------------------------------------------------------------------------------
+\section{SELECTED COURSES}
+
+\subsection{Amirkabir University of Technology Courses}
+\begin{multicols}{2}
+    \begin{itemize}
+        \item \authorimg{Images/aut.png} \textbf{Machine Learning} \hfill [Winter 2018] \\
+        \textcolor{gray}{Instructor: \href{https://aut.ac.ir/cv/2503/SANAZ-SEYEDIN?slc_lang=en&&cv=2503&mod=scv}{Dr. Sanaz Seyedin}}
+
+        \item \authorimg{Images/aut.png} \textbf{Pattern Recognition} \hfill [Winter 2019] \\
+        \textcolor{gray}{Instructor: \href{https://aut.ac.ir/cv/2253/KARIM-FAEZ?slc_lang=en&&cv=2253&mod=scv/}{Prof. Karim Faez}}
+
+        \item \authorimg{Images/aut.png} \textbf{Statistical Learning} \hfill [Fall 2021] \\
+        \textcolor{gray}{Instructor: \href{https://aut.ac.ir/cv/2519/VAHID-POURAHMADI?slc_lang=en&&cv=2519&mod=scv}{Dr. Vahid Pourahmadi}}
+
+        \item \authorimg{Images/aut.png} \textbf{Swarm Intelligence Algorithms} \hfill [Fall 2019] \\
+        \textcolor{gray}{Instructor: \href{https://aut.ac.ir/cv/2486/SAEED-SHARIFIAN-KHORTOOMI?slc_lang=en&&cv=2486&mod=scv}{Dr. Saeed Sharifian}}
+    \end{itemize}
+\end{multicols}
+
+\subsection{Online Courses}
+\begin{itemize}
+    \item \authorimg{Images/torch.png} \href{https://www.udemy.com/course/pytorch-for-deep-learning-with-python-bootcamp/}{\textbf{PyTorch for Deep Learning with Python Bootcamp}}
+
+    \item \authorimg{Images/python.png} \href{https://www.pytopia.ai/courses/python-programming-beginner-to-advanced}{\textbf{Python Programming: Beginner to Advanced}}
+
+    \item \authorimg{Images/Postgresql_logo.svg.png} \href{https://www.udemy.com/course/the-complete-sql-bootcamp/}{\textbf{The Ultimate SQL Bootcamp: From Beginner to Expert}}
+
+    \item \authorimg{Images/ml.png} \href{https://www.udemy.com/course/python-for-machine-learning-data-science-masterclass/}{\textbf{Python for Machine Learning and Data Science Masterclass}}
+
+    \item \authorimg{Images/ml.png} \href{https://ocw.sharif.ir/course/id/527}{\textbf{Intelligent Processing of Biomedical Images (Sharif University of Technology)}}
+
+    \item \authorimg{Images/data_structure_logo.png} \href{https://www.udemy.com/course/data-structures-algorithms-python/}{\textbf{Python Data Structures and Algorithms}}
+
+    \item \authorimg{Images/torch.png} \href{https://ocw.sharif.ir/course/id/524}{\textbf{Large language Models (Sharif University of Technology)}}
+
+    \item \authorimg{Images/spark_logo.png} \href{https://www.udemy.com/course/spark-and-python-for-big-data-with-pyspark/}{\textbf{Spark and Python for Big Data with PySpark}}
+
+    \item \authorimg{Images/ml.png} \href{https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D8%A8%DB%8C%D9%88%D8%A7%D9%86%D9%81%D9%88%D8%B1%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-mk663/#chapter}{\textbf{Machine Learning for Bioinformatics (Sharif University of Technology)}}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGE SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\section{LANGUAGE SKILLS}
+
+\begin{itemize}
+    \item \textbf{English} \hspace{6 pt} \textit{Fluent}
+    \begin{itemize}
+        \item IELTS Score: 6.5
+    \end{itemize}
+    \item \textbf{German} \hspace{6 pt}
+    \begin{itemize}
+        \item Proficiency level: A1
+    \end{itemize}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Interests}
+
+% \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+% \cvlistdoubleitem{Piano}{Chess}
+% \cvlistdoubleitem{Cooking}{Dancing}
+% \cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+
+% ----------------------------------------------------------------------------------------
+% References and Proofs
+% ----------------------------------------------------------------------------------------
+
+\vspace{2em}
+\centerline{\underline{\textbf{\faExclamationCircle \hspace{0.5pt} References, Further Information, and Proofs Available Upon Request}}}
+
+
+\end{document}
